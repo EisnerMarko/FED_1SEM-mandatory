@@ -134,7 +134,7 @@ body {
   color:var(--background-color-light);
 } 
 
-.hero-container {/* child to follow to 12 column */
+.hero-container { /* child to follow to 12 column */
   display:grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto auto;
@@ -203,17 +203,6 @@ body {
   color: var(--color-white);
 }
 
-/*
-.today_recipe{
-  width: var(--width-full);
-  height: fit-content;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 130px auto;
-  gap: var(--grid-gap);
-  box-sizing: border-box;
-}*/
-
 .todays_recipe { 
   margin-top: 72px; 
   width:var(--width-full);
@@ -224,12 +213,6 @@ body {
   gap:var(--grid-gap);
   position: relative;
 }
-
-
-
-/* .todays_recipes_content_block_image img{
-  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
-  } */
 
 .todays_recipes_content_block_image img{
   /*clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);*/
@@ -252,7 +235,7 @@ body {
   font-size: 37px;
   text-shadow: 1px 1px 3px var(--background-color-dark-bg);
   font-weight: 700;
-  display: flex; /*?*/  
+  display: flex;
   align-items: center;
   justify-self: flex-start;
   margin: 0 auto;
@@ -584,7 +567,7 @@ h5[data-category="snacks"] , h4[data-category="snacks"]{
 }
 
 .content_image_hero{
-  background-image: url('../img/All_star_showdown_guide.png');
+  background-image: url('../img/All_star_showdown_guide.jpg');
   width: var(--width-full);
   height: auto;
   min-height: 700px;
@@ -608,21 +591,21 @@ h5[data-category="snacks"] , h4[data-category="snacks"]{
 
 .content_image_content_block h4{
   color: var(--color_dark);
-  font-size: 16px; /* 16px */
+  font-size: 16px;
   font-weight: 700;
 }
 
 .content_image_content_block h3{
   color: #FF5C00;
   text-transform: uppercase;
-  font-size: 22px; /* 22px */
+  font-size: 22px;
   font-weight: 700;
   padding: 11px 0px;
 }
 
 .content_image_content_block p{
   color: var(--color_dark);
-  font-size: 16px; /* 16px */
+  font-size: 16px;
   padding: 3px 0px 0px 0px;
 }
 
@@ -638,7 +621,7 @@ h5[data-category="snacks"] , h4[data-category="snacks"]{
   font-size: 37px;
   text-shadow: 1px 1px 3px var(--background-color-dark-bg);
   font-weight: 700;
-  display: flex; /*?*/
+  display: flex;
   align-items: center;
   justify-self: flex-start;
   margin: 0 auto;
@@ -730,7 +713,6 @@ h5[data-category="snacks"] , h4[data-category="snacks"]{
   font-weight: 700;
   color: var(--color_dark);
   font-size: 16px;
-  /* border-left: 1px solid var(--primary-color); */
   margin-bottom: 11px;
   border-left: 2px solid var(--primary-color);
   padding-left: 7px;
@@ -857,8 +839,7 @@ h5[data-category="snacks"] , h4[data-category="snacks"]{
   grid-column: 1 / span 6;
 }
 
-
-.recipe-hero-container {/* child to follow to 12 column */
+.recipe-hero-container { /* child to follow to 12 column */
   display:grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto auto;
@@ -892,7 +873,6 @@ h5[data-category="snacks"] , h4[data-category="snacks"]{
   margin-bottom:15px
 }
 
-
 /* START HERE */
 /* PART I - Three icon+info */
 .recipe_details_ingredient_block_info_three{
@@ -913,8 +893,6 @@ h5[data-category="snacks"] , h4[data-category="snacks"]{
   padding-right: 10px;
 }
 /* Part I End */
-
-
 
 /* PART II - input field ingredients start */
 .recipe_details_ingredients{
@@ -983,8 +961,6 @@ h5[data-category="snacks"] , h4[data-category="snacks"]{
 }
 /* input field ingredients end - PART II end */
 
-
-
 /* PART III - buttons after input fields */
 .recipe_details_ingredient_block_buttons{
   display: flex;
@@ -1010,8 +986,6 @@ h5[data-category="snacks"] , h4[data-category="snacks"]{
   padding-left: 3px;
 }
 /* PART III END */
-
-
 
 /* Right side top */
 .recipe_details_right {
@@ -1070,6 +1044,10 @@ h5[data-category="snacks"] , h4[data-category="snacks"]{
   font-size: 36px;
   margin: 0;
   text-shadow: 1px 1px 2px var(--background-color-dark-bg);
+}
+
+.subpage_recipe_section_header_mobile_version{
+  display: none;
 }
 
 .recipe-section-text-area {
@@ -1202,11 +1180,11 @@ MEDIA
   }
 
   .content_area_content_blocks_template:nth-child(3) {
-    order: 4; /* Move the 3rd item to the 4th position */
+    order: 4;
   }
 
   .content_area_content_blocks_template:nth-child(4) {
-    order: 3; /* Move the 4th item to the 3rd position */
+    order: 3;
   }
 
   .content_area_content_blocks_template{
@@ -1252,11 +1230,6 @@ MEDIA
     grid-template-columns: repeat(6, 1fr);
   }
 
-  .double_headline{
-    font-size: 28px;
-    height: 40px;
-  }
-
   .au-dhnb-one{
     grid-column: 1 / span 6;
   }
@@ -1281,6 +1254,36 @@ MEDIA
 
   .recipe_details_right{
     grid-column: 1 / span 12;
+  }
+
+  .instructions {
+    grid-column: span 12;
+  }
+
+  .ingredients{
+    grid-column: span 12;
+    padding-left: 15px;
+  }
+
+  .ingredients-title{
+    display: none;
+  }
+
+  .ingredients_title_mobile_version{
+    display: block;
+  }
+
+  .subpage_recipe_section_header_mobile_version{
+    display: block;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--color-light);
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+
+  .double_headline_block{
+    grid-column: span 12;
   }
 }
 
@@ -1313,25 +1316,14 @@ MEDIA
   }
 
   .double_headline{
-    font-size: 21px;
-    height: 30px;
+    font-size: 28px;
+    height: 40px;
   }
 
   .todays_recipes_content {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .instructions-title{
-    grid-column: 1 / span 7;
-  }
-
-  .ingredients-title{
-    grid-column: 8 / span 5;
-  }
-
-  .ingredients{
-    grid-column: 8 / span 5;
-  }
 
   .todays_recipe_headline img{
     width: 30px;
