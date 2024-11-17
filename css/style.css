@@ -801,11 +801,27 @@ h5[data-category="snacks"] , h4[data-category="snacks"]{
 }
 
 .footer_social_media,
-.footer_navigator,
-.footer_right {
+.footer_navigator{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.footer_right {
+  grid-column: 8 / span 4;
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  text-align: right;
+  justify-content: center;
+}
+
+.footer_right p{
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--color_dark);
+  margin: 7px 0px;
 }
 
 .footer_separator{
@@ -1026,7 +1042,7 @@ h5[data-category="snacks"] , h4[data-category="snacks"]{
   margin-top: 77px;
 }
 
-.instructions-title {
+.instructions_title {
   grid-column: 1 / span 8;
   color: var(--color-light);
   text-transform: uppercase;
@@ -1036,7 +1052,7 @@ h5[data-category="snacks"] , h4[data-category="snacks"]{
   text-shadow: 1px 1px 2px var(--background-color-dark-bg);
 }
 
-.ingredients-title {
+.ingredients_title {
   grid-column: 9 / span 4;
   color: var(--color-white);
   text-transform: uppercase;
@@ -1050,7 +1066,7 @@ h5[data-category="snacks"] , h4[data-category="snacks"]{
   display: none;
 }
 
-.recipe-section-text-area {
+.recipe_section_text_area {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--grid-gap);
@@ -1092,7 +1108,7 @@ h5[data-category="snacks"] , h4[data-category="snacks"]{
   margin-bottom: 15px;
 }
 
-.step-number {
+.subpage_step_number {
   font-size: 13px;
   font-weight: 400;
   color: var(--primary-color);
@@ -1242,8 +1258,8 @@ MEDIA
     grid-gap: 25px;
   }
 
-  .instructions-title,
-  .ingredients-title{
+  .instructions_title,
+  .ingredients_title{
     font-size: 26px;
     height: 24px;
   }
@@ -1265,7 +1281,7 @@ MEDIA
     padding-left: 15px;
   }
 
-  .ingredients-title{
+  .ingredients_title{
     display: none;
   }
 
@@ -1342,8 +1358,8 @@ MEDIA
     margin-right: 2px;
   }
   
-  .instructions-title,
-  .ingredients-title{
+  .instructions_title,
+  .ingredients_title{
     font-size: 20px;
     height: 20px;
   }
